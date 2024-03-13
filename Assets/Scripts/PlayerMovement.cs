@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float movementSpeed = 5;
     [SerializeField] Vector2 movementDirection;
     PlayerAnimations animations;
-    PlayerData playerData;
+    [SerializeField] PlayerData playerData;
 
 
 

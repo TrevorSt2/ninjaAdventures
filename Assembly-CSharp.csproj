@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A3AA5157-0A6E-8DDF-4CD2-A7D61912DFBA}</ProjectGuid>
+    <ProjectGuid>{A5AFDB02-D166-6151-CB9E-2E2AD821FDB8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,14 +56,14 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Actions\PlayerActions.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Actions\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Core\IDamagable.cs" />
-    <Compile Include="Assets\Scripts\Core\PlayerHealth.cs" />
-    <Compile Include="Assets\Scripts\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerMana.cs" />
+    <Compile Include="Assets\Actions\PlayerActions.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerAnimations.cs" />
+    <Compile Include="Assets\Scripts\Core\PlayerHealth.cs" />
+    <Compile Include="Assets\Actions\PlayerStats.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

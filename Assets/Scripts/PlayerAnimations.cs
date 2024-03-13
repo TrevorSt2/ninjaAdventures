@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAnimations : MonoBehaviour
 {
 
+
     readonly int moveX = Animator.StringToHash("moveX");
     readonly int moveY = Animator.StringToHash("moveY");
     readonly int isMoving = Animator.StringToHash("isMoving");
@@ -33,4 +34,11 @@ public class PlayerAnimations : MonoBehaviour
         anim.SetFloat(moveX, dir.x);
         anim.SetFloat(moveY, dir.y);
     }
+
+    public void ResetPlayerAnimation()
+    {
+        handleMovingAnimation(Vector2.down);
+        anim.SetTrigger(revived);
+    }
+
 }

@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Floor
+  - Decor
+  - Solids
+  - Props
   - 
   - 
   - 
@@ -40,6 +40,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 219116591
+    locked: 0
+  - name: Solid
+    uniqueID: 1812065373
     locked: 0
   - name: Player
     uniqueID: 3075449005

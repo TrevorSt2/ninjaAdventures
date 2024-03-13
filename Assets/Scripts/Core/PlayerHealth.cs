@@ -20,6 +20,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         {
             TakeDamage(1f);
         }
+
     }
     public void TakeDamage(float damage)
     {

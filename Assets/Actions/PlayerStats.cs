@@ -15,6 +15,11 @@ public class PlayerStats : ScriptableObject
     {
         CurrentHealth = 10;
         CurrentMana = 10;
-        CurrentLevel = 1;
+    }
+
+    public void RevivePlayer()
+    {
+        CurrentHealth = MaxHealth/2;
+        CurrentMana = MaxMana/2;
     }
 }

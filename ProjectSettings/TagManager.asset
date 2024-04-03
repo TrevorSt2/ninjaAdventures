@@ -13,13 +13,13 @@ TagManager:
   - UI
   - Floor
   - Decor
+  - 
+  - Enemy
+  - 
   - Solids
+  - 
+  - 
   - Props
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Solid
     uniqueID: 1812065373
+    locked: 0
+  - name: Enemy
+    uniqueID: 317780207
     locked: 0
   - name: Player
     uniqueID: 3075449005

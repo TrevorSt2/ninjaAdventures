@@ -24592,6 +24592,9 @@ GameObject:
   - component: {fileID: 815010322}
   - component: {fileID: 815010321}
   - component: {fileID: 815010320}
+  - component: {fileID: 815010319}
+  - component: {fileID: 815010324}
+  - component: {fileID: 815010325}
   m_Layer: 9
   m_Name: Beast
   m_TagString: Untagged
@@ -24599,6 +24602,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &815010319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815010318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e359ec059b386248a3a74b700838bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateID: 1
+  states:
+  - ID: 1
+    Actions:
+    - {fileID: 815010324}
+  - ID: 3
+    Actions:
+    - {fileID: 815010324}
 --- !u!50 &815010320
 Rigidbody2D:
   serializedVersion: 4
@@ -24701,6 +24724,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &815010324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815010318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c225d078e6474054da4627653c24dc13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  wanderTime: 0
+  moveRange: {x: 0, y: 0}
+--- !u!114 &815010325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815010318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8640f68819c67b449b76975182c28104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &900566059
 GameObject:
   m_ObjectHideFlags: 0
@@ -27054,6 +27104,7 @@ GameObject:
   - component: {fileID: 944044249}
   - component: {fileID: 944044248}
   - component: {fileID: 944044247}
+  - component: {fileID: 944044252}
   m_Layer: 9
   m_Name: Bamboo
   m_TagString: Untagged
@@ -27182,6 +27233,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &944044252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944044246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e359ec059b386248a3a74b700838bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateID: 0
+  states:
+  - ID: 0
+    Actions: []
 --- !u!1001 &1018329016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27532,7 +27599,7 @@ GameObject:
   - component: {fileID: 1746472903}
   - component: {fileID: 1746472905}
   - component: {fileID: 1746472904}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}

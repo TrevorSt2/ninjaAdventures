@@ -29,13 +29,26 @@ public class FSM_State
 
             if (value)
             {
-                //ChangeState(Transitions[i].TrueState);
+                if (Transitions[i].TrueState != EnemyState.NONE)
+                {
+                    brain.ChangeState(Transitions[i].TrueState);
+                }
             }
             else
             {
-                //ChangeState(Transitions[i].FalseState);
+                if (Transitions[i].FalseState != EnemyState.NONE)
+                {
+                    brain.ChangeState(Transitions[i].FalseState);
+                }
+          
             }
         }
+    }
+
+    public void UpdateState(EnemyBrain brain)
+    {
+        ExecuteActions();
+        ExecuteTransitions(brain);
     }
 }
 

@@ -24595,6 +24595,8 @@ GameObject:
   - component: {fileID: 815010319}
   - component: {fileID: 815010324}
   - component: {fileID: 815010325}
+  - component: {fileID: 815010326}
+  - component: {fileID: 815010327}
   m_Layer: 9
   m_Name: Beast
   m_TagString: Untagged
@@ -24619,9 +24621,15 @@ MonoBehaviour:
   - ID: 1
     Actions:
     - {fileID: 815010324}
-  - ID: 3
+  - ID: 2
     Actions:
     - {fileID: 815010324}
+  - ID: 3
+    Actions:
+    - {fileID: 815010326}
+  - ID: 3
+    Actions:
+    - {fileID: 815010326}
 --- !u!50 &815010320
 Rigidbody2D:
   serializedVersion: 4
@@ -24751,6 +24759,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8640f68819c67b449b76975182c28104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aggroRange: 0
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &815010326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815010318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815709d28540271459d5a1b0f40dd5c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseSpeed: 5
+  stoppingDistance: 5
+--- !u!114 &815010327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815010318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8640f68819c67b449b76975182c28104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aggroRange: 0
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &900566059
 GameObject:
   m_ObjectHideFlags: 0

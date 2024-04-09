@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Enemy\FSM\FSM_Action.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBrain.cs" />
     <Compile Include="Assets\Scripts\Enemy\FSM\FSM_Transition.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Decision_DetectPlayer.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerMana.cs" />
     <Compile Include="Assets\Scripts\Enemy\FSM\Action_Wander.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="Assets\Scripts\Enemy\FSM\FSM_Decision.cs" />
     <Compile Include="Assets\Scripts\Enemy\FSM\FSM_State.cs" />
     <Compile Include="Assets\Actions\PlayerStats.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Decision_DetectPlayer.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Action_Chase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

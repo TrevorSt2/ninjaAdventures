@@ -24594,9 +24594,9 @@ GameObject:
   - component: {fileID: 815010320}
   - component: {fileID: 815010319}
   - component: {fileID: 815010324}
-  - component: {fileID: 815010325}
   - component: {fileID: 815010326}
   - component: {fileID: 815010327}
+  - component: {fileID: 815010325}
   m_Layer: 9
   m_Name: Beast
   m_TagString: Untagged
@@ -24621,15 +24621,12 @@ MonoBehaviour:
   - ID: 1
     Actions:
     - {fileID: 815010324}
-  - ID: 2
+  - ID: 3
     Actions:
     - {fileID: 815010324}
   - ID: 3
     Actions:
-    - {fileID: 815010326}
-  - ID: 3
-    Actions:
-    - {fileID: 815010326}
+    - {fileID: 815010324}
 --- !u!50 &815010320
 Rigidbody2D:
   serializedVersion: 4
@@ -24756,13 +24753,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 815010318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8640f68819c67b449b76975182c28104, type: 3}
+  m_Script: {fileID: 11500000, guid: f62b4224e0036ba45bca24ccb85a0a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 0
-  playerMask:
-    serializedVersion: 2
-    m_Bits: 0
+  points:
+  - {x: 2, y: 4, z: 0}
+  - {x: 24, y: 6, z: 0}
 --- !u!114 &815010326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24776,7 +24772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseSpeed: 5
-  stoppingDistance: 5
+  stoppingDistance: 2
 --- !u!114 &815010327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24789,7 +24785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8640f68819c67b449b76975182c28104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 0
+  aggroRange: 5
   playerMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -27133,6 +27129,36 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &941674988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 941674989}
+  m_Layer: 0
+  m_Name: Point2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &941674989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941674988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.3825564, y: 4.919234, z: -0.055145834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &944044246
 GameObject:
   m_ObjectHideFlags: 0
@@ -27625,6 +27651,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4886635255128480940, guid: 3374f6b676c5f6d44811392560136157, type: 3}
   m_PrefabInstance: {fileID: 1378031313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1463625867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1463625868}
+  m_Layer: 0
+  m_Name: Point1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1463625868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463625867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.3825564, y: 4.919234, z: -0.055145834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1746472897
 GameObject:
   m_ObjectHideFlags: 0

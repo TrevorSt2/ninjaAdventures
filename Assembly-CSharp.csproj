@@ -66,13 +66,16 @@
     <Compile Include="Assets\Scripts\Enemy\FSM\Action_Wander.cs" />
     <Compile Include="Assets\Actions\PlayerActions.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Action_Chase.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\Enemy\FSM\ChangeState.cs" />
     <Compile Include="Assets\Scripts\Core\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\FSM\FSM_Decision.cs" />
     <Compile Include="Assets\Scripts\Enemy\FSM\FSM_State.cs" />
     <Compile Include="Assets\Actions\PlayerStats.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Action_Chase.cs" />
+    <Compile Include="Assets\Scripts\Waypoints\Waypoint.cs" />
+    <Compile Include="Assets\Scripts\Waypoints\WaypointEditor.cs" />
+    <Compile Include="Assets\Scripts\Enemy\FSM\Action_Patrol.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
